@@ -1,0 +1,14 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="cont-style">
+    <snav class="side-nav"></snav>
+    <div class="main-con">
+        <div class="title-bar"></div>
+        <div class="sub-nav" id="sub_nav">
+            <div class="search-bar-box">
+                <input type="text" class="search-bar" placeholder="search..">
+            </div>
+            <div class="sub-nav-item" *ngFor='let snav of subNav' routerLink='/my music/{{snav}}' (click)='snavClk($event)'>{{snav}}</div>
+        </div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

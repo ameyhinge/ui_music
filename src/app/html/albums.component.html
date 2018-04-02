@@ -1,0 +1,12 @@
+<div class="my-music">
+    <div *ngFor='let album of albums'class="album-box" (click)='albumClicked($event)' (mouseenter)='showjumpBar($event)' (mouseleave)='hidejumpBar($event)'>
+        <div class="album-art"></div>
+        <div class="album-name">{{album.albumData}} * {{album.releaseYear}}</div>
+        <div class="artist-name">{{album.artist}}</div>
+        <div class="hov-area">
+            <div class="hov-button">rr</div>
+            <div class="hov-button">rrs</div>
+        </div>
+    </div>
+</div>
+

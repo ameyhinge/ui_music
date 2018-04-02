@@ -1,0 +1,81 @@
+.my-music{
+    display: flex;
+    height: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:4.6rem;
+    margin-right: 15.7rem;
+    overflow: auto;
+    padding-bottom: 11rem;
+    background-color: rgb(255, 255, 253);
+    align-content: flex-start;
+}
+.album-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0.05rem rgba(0,0,0,0.05);
+    width: 11rem;
+    height:13rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.7rem;
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+    transition: box-shadow 0.1s;
+    overflow: hidden;
+}
+.album-box:hover{
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.01);
+}
+.album-box:active{
+    background-color: rgba(0,0,0,0.02);
+    box-shadow: 0px 0px 0.001rem rgba(0,0,0,0.2);
+}
+
+.album-art{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-image: url('../resources/Border.jpg');
+    background-size: cover;
+    transition: width, height 0.2s,0.2s;
+}
+
+.album-name{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.2rem;
+    height:1rem;
+}
+.artist-name{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0.2rem;
+    color: rgba(0,0,0,0.8);
+    height:1rem;
+    font-size: 0.7rem;
+}
+.hov-area{
+    position: absolute;
+    margin-top: 2rem;
+    z-index: 5;
+    width: 8rem;
+    height: 3rem;
+    backdrop-filter: blur(20px);
+    display: none;
+    border: 1px solid rgba(255,255,255,0.5);
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+}
+@media only screen and (max-width: 800px) {
+    .my-music{
+        margin-right: 0rem;
+        margin-top:2.4rem;
+    }
+}

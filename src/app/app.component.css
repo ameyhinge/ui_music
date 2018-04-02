@@ -1,0 +1,13 @@
+.app-back{
+    display: flex;
+    flex-direction: column;
+    height: stretch;
+    width: inherit;
+    backdrop-filter:blur(30px);
+}
+.cb-style{
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    z-index: 15;
+}

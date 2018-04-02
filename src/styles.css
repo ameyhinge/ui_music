@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin:0px;
+    height: 100%;
+    background-image:url("app/resources/autumn_wallpaper_by_overkill766-d5jbtxq.jpg");
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

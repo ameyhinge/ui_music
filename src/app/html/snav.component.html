@@ -1,0 +1,9 @@
+<div class="title-bar">
+    <div class="back-arrow"></div>{{title}}
+</div>
+<base href="//my music">
+<div *ngFor='let menu of menus'>
+    <a class="nav-item" routerLink='/{{menu.main}}' routerLinkActive="nav-active" (mouseenter)="navHover($event)" (mouseleave)="navLeave()">
+        <div class="back-arrow"></div>{{menu.main}}
+    </a>
+</div>

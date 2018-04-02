@@ -1,0 +1,108 @@
+.cont-style{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:stretch;
+    box-sizing: border-box;
+    font-size: 1rem;
+    overflow-y: auto;
+}
+.side-nav{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: stretch;
+    background-color: rgba(255,255,255,0.7);
+    z-index: 10;
+}
+.sub-nav{
+    background-color: white;
+    color: black;
+    z-index: 5;
+    height: 2.4rem;
+    margin-top: 2.2rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 0.05rem solid rgba(0,0,0,0.2);
+    position: fixed;
+}
+.sub-nav-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left:0.5rem;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-bottom: 0.1rem solid transparent; 
+    transition: color,border-bottom 0.2s,0.2s;
+}
+.sub-nav-item:hover{
+    color: rgb(18, 151, 228);
+}
+.sub-nav-item:active{
+    border-bottom: 0.1rem solid rgb(18, 151, 228); 
+}
+.sub-nav-active{
+    color: rgb(18, 151, 228);
+    border-bottom: 0.1rem solid rgb(18, 151, 228); 
+}
+.search-bar-box{
+    display: flex;
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.search-bar{
+    height: 100%;
+    border:none;
+    border-bottom: 1px solid rgba(18, 151, 228,0.5);
+    padding-left: 0.4rem;
+    padding-right:0.4rem;
+    box-sizing: border-box;
+    width: 13rem;
+}
+.search-bar:focus{
+    outline: none;
+}
+.search-bar-focus{
+    background-color: white;
+    box-shadow: 0px 0px 1px rgba(0,0,0,0.4);
+}
+.main-con{
+    width: inherit;
+    height: inherit;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left:15rem;
+}
+.title-bar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 2.2rem;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.1rem;
+    border-left:0.2rem solid transparent;
+}
+@media only screen and (max-width: 800px) {
+    .title-bar{
+        display: none;
+    }
+    .sub-nav{
+        margin-top: 0;
+    }
+    .main-con{
+        left:0rem;
+    }
+    .search-bar{
+        display: none;
+    }
+}

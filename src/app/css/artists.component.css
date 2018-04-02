@@ -1,0 +1,64 @@
+.my-music{
+    display: flex;
+    height: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top:4.6rem;
+    margin-right: 15.7rem;
+    overflow: auto;
+    padding-bottom: 11rem;
+    background-color: rgb(255, 255, 253);
+    align-content: flex-start;
+}
+.album-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 0.05rem rgba(0,0,0,0.05);
+    width: 11rem;
+    height:13rem;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.7rem;
+    margin-top: 0.7rem;
+    font-size: 0.8rem;
+    transition: box-shadow 0.1s;
+}
+.album-box:hover{
+    box-shadow: 0px 0px 1rem rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.01);
+}
+.album-box:active{
+    background-color: rgba(0,0,0,0.02);
+    box-shadow: 0px 0px 0.001rem rgba(0,0,0,0.2);
+}
+
+.album-art{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.artist-name{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.2rem;
+    height: 2rem;
+}
+.hov-area{
+    position: absolute;
+    z-index: 5;
+    width: 8rem;
+    height: 3rem;
+    background-color: red;
+}
+@media only screen and (max-width: 800px) {
+    .my-music{
+        margin-right: 0rem;
+        margin-top:2.4rem;
+    }
+}

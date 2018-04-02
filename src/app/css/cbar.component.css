@@ -1,0 +1,8 @@
+.cbar-style{
+    width: inherit;
+    height: 5.5rem;
+    background-color:rgba(18, 151, 228, 0.7);
+    backdrop-filter: blur(20px); 
+    box-sizing: border-box;
+    border-top: 1px solid rgba(18, 151, 228, 0.8);
+}
